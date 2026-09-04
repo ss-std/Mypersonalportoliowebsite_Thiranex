@@ -55,7 +55,7 @@ const Hero = () => {
 
         <h1 className={styles.name}>
           <span className={styles.nameHi}>Hi, I'm </span>
-          <span className={styles.nameMain}>Portfolio Developer</span>
+          <span className={styles.nameMain}>Shahbaz Shafi</span>
           <span className={styles.dot}>.</span>
         </h1>
         

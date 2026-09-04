@@ -14,7 +14,7 @@ const Footer = () => {
           <div className={styles.brandCol}>
             <a href="#" className={styles.brandLogo} onClick={scrollToTop}>
               <span className={styles.logoBracket}>&lt;</span>
-              <span className={styles.logoName}>Portfolio Developer</span>
+              <span className={styles.logoName}>Shahbaz Shafi</span>
               <span className={styles.logoBracket}> /&gt;</span>
             </a>
             <p className={styles.brandTagline}>
@@ -39,7 +39,7 @@ const Footer = () => {
             Designed & Engineered with modern React.js & Node.js
           </p>
           <div className={styles.location}>
-            <span>Available worldwide</span> • <span>&copy; {new Date().getFullYear()} Portfolio Developer</span>
+            <span>Available worldwide</span> • <span>&copy; {new Date().getFullYear()} Shahbaz Shafi</span>
           </div>
         </div>
       </div>
