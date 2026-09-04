@@ -53,10 +53,10 @@ const Education = () => {
           </div>
 
           <div className={styles.collegeInfo}>
-            <h4 className={styles.collegeName}>Jamia Hamdard University</h4>
+            <h4 className={styles.collegeName}>Bachelor's Degree in Computer Science</h4>
             <div className={styles.collegeMeta}>
               <span className={styles.metaItem}>
-                <FiMapPin className={styles.metaIcon} /> New Delhi, India
+                <FiMapPin className={styles.metaIcon} /> Computer Science & Engineering
               </span>
               <span className={styles.metaItem}>
                 <FiCalendar className={styles.metaIcon} /> Aug 2023 – Jul 2027 (Expected)

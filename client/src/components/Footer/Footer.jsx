@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowUp, FiGithub, FiHeart, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiArrowUp, FiGithub, FiHeart, FiLinkedin } from 'react-icons/fi';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -14,11 +14,11 @@ const Footer = () => {
           <div className={styles.brandCol}>
             <a href="#" className={styles.brandLogo} onClick={scrollToTop}>
               <span className={styles.logoBracket}>&lt;</span>
-              <span className={styles.logoName}>Shahbaz Shafi</span>
+              <span className={styles.logoName}>Portfolio Developer</span>
               <span className={styles.logoBracket}> /&gt;</span>
             </a>
             <p className={styles.brandTagline}>
-              Computer Science Undergraduate & Full-Stack Developer based in New Delhi.
+              Computer Science Undergraduate & Full-Stack Developer.
             </p>
           </div>
 
@@ -28,9 +28,6 @@ const Footer = () => {
             </a>
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="GitHub">
               <FiGithub />
-            </a>
-            <a href="mailto:shazam200@gmail.com" className={styles.socialBtn} aria-label="Email">
-              <FiMail />
             </a>
           </div>
         </div>
@@ -42,7 +39,7 @@ const Footer = () => {
             Designed & Engineered with modern React.js & Node.js
           </p>
           <div className={styles.location}>
-            <span>New Delhi, India</span> • <span>&copy; {new Date().getFullYear()} Shahbaz Shafi</span>
+            <span>Available worldwide</span> • <span>&copy; {new Date().getFullYear()} Portfolio Developer</span>
           </div>
         </div>
       </div>

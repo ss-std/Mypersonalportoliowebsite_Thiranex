@@ -17,7 +17,7 @@ const About = () => {
     {
       icon: <FiBookOpen />,
       title: 'Academic Excellence',
-      desc: 'B.Tech CSE at Jamia Hamdard University, New Delhi with a strong 8.01 GPA.'
+      desc: 'Computer Science foundation with a focus on software engineering and web development.'
     },
     {
       icon: <FiAward />,
@@ -37,8 +37,7 @@ const About = () => {
       <div className={styles.inner}>
         <div className={styles.bioText}>
           <p className={styles.leadParagraph}>
-            Hello! I'm <strong className={styles.highlight}>Shahbaz Shafi</strong>, a Computer Science undergraduate 
-            based in New Delhi, India, passionate about turning complex problems into elegant, scalable web applications.
+            Hello! I'm a Computer Science undergraduate passionate about turning complex problems into elegant, scalable web applications.
           </p>
           <p>
             My journey in software engineering combines academic rigor with practical production experience. At 

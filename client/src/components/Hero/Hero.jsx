@@ -3,9 +3,6 @@ import {
   FiArrowRight, 
   FiGithub, 
   FiLinkedin, 
-  FiMail, 
-  FiMapPin, 
-  FiPhone, 
   FiCode,
   FiDownload
 } from 'react-icons/fi';
@@ -58,7 +55,7 @@ const Hero = () => {
 
         <h1 className={styles.name}>
           <span className={styles.nameHi}>Hi, I'm </span>
-          <span className={styles.nameMain}>Shahbaz Shafi</span>
+          <span className={styles.nameMain}>Portfolio Developer</span>
           <span className={styles.dot}>.</span>
         </h1>
         
@@ -77,14 +74,8 @@ const Hero = () => {
         {/* Well-managed interactive contact chips */}
         <div className={styles.contactChips}>
           <span className={styles.chip}>
-            <FiMapPin className={styles.chipIcon} /> New Delhi, India
+            <FiCode className={styles.chipIcon} /> Open to opportunities
           </span>
-          <a href="tel:6896456789" className={styles.chip}>
-            <FiPhone className={styles.chipIcon} /> +91 6896456789
-          </a>
-          <a href="mailto:shazam200@gmail.com" className={styles.chip}>
-            <FiMail className={styles.chipIcon} /> shazam200@gmail.com
-          </a>
         </div>
 
         {/* Animated Action Buttons */}
@@ -112,10 +103,6 @@ const Hero = () => {
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="GitHub">
             <FiGithub />
             <span className={styles.socialTooltip}>GitHub</span>
-          </a>
-          <a href="mailto:shazam200@gmail.com" className={styles.socialLink} aria-label="Email">
-            <FiMail />
-            <span className={styles.socialTooltip}>Email</span>
           </a>
         </div>
 

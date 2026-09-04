@@ -10,7 +10,10 @@ import {
   SiGit, 
   SiGithub, 
   SiMongodb, 
-  SiPython
+  SiPython,
+  SiVite,
+  SiExpress,
+  SiNpm
 } from 'react-icons/si';
 import { FaJava, FaCss3Alt } from 'react-icons/fa';
 import { 
@@ -59,7 +62,9 @@ const Skills = () => {
         { name: 'CSS3', level: 92, icon: <FaCss3Alt />, color: '#1572b6', badge: 'Flex & Grid', exp: 'Glassmorphic UI' },
         { name: 'Responsive UI', level: 90, icon: <FiGrid />, color: '#64ffda', badge: 'Cross-Device', exp: 'Multi-screen UX' },
         { name: 'CSS Modules', level: 86, icon: <FiLayers />, color: '#2965f1', badge: 'Scoped Styles', exp: 'Component Architecture' },
-        { name: 'Web Accessibility', level: 82, icon: <FiCode />, color: '#f59e0b', badge: 'Inclusive UX', exp: 'Semantic Interfaces' }
+        { name: 'Web Accessibility', level: 82, icon: <FiCode />, color: '#f59e0b', badge: 'Inclusive UX', exp: 'Semantic Interfaces' },
+        { name: 'Vite', level: 88, icon: <SiVite />, color: '#646cff', badge: 'Build Tool', exp: 'Fast Development' },
+        { name: 'Axios', level: 84, icon: <FiServer />, color: '#5a29e4', badge: 'HTTP Client', exp: 'API Integration' }
       ]
     },
     {
@@ -71,8 +76,22 @@ const Skills = () => {
       skills: [
         { name: 'Spring Boot', level: 80, icon: <SiSpringboot />, color: '#6db33f', badge: 'Enterprise', exp: 'Java Full Stack Cert' },
         { name: 'Node.js', level: 82, icon: <SiNodedotjs />, color: '#339933', badge: 'Runtime & Express', exp: 'Portfolio REST API' },
+        { name: 'Express.js', level: 84, icon: <SiExpress />, color: '#e2e8f0', badge: 'Web Framework', exp: 'API Routes & Middleware' },
         { name: 'RESTful APIs', level: 88, icon: <FiServer />, color: '#38bdf8', badge: 'API Architecture', exp: 'Contract & Testing' },
-        { name: 'MongoDB', level: 80, icon: <SiMongodb />, color: '#47a248', badge: 'NoSQL Database', exp: 'Mongoose ODM' }
+        { name: 'Mongoose', level: 80, icon: <FiDatabase />, color: '#880000', badge: 'ODM', exp: 'Schema Modeling' },
+        { name: 'dotenv & CORS', level: 82, icon: <FiSettings />, color: '#f59e0b', badge: 'Server Config', exp: 'Environment & Security' }
+       ]
+     },
+     {
+       id: 'databases',
+       category: 'Databases',
+       icon: <FiDatabase />,
+       accentColor: '#47a248',
+       description: 'Data modeling, persistence & database connectivity',
+       skills: [
+        { name: 'MongoDB', level: 80, icon: <SiMongodb />, color: '#47a248', badge: 'NoSQL Database', exp: 'Portfolio Data Store' },
+        { name: 'MongoDB Atlas', level: 78, icon: <SiMongodb />, color: '#00ed64', badge: 'Cloud Database', exp: 'Managed Deployment' },
+        { name: 'Schema Design', level: 82, icon: <FiDatabase />, color: '#38bdf8', badge: 'Data Modeling', exp: 'Project & Skill Models' }
       ]
     },
     {
@@ -84,6 +103,7 @@ const Skills = () => {
       skills: [
         { name: 'Git', level: 90, icon: <SiGit />, color: '#f05032', badge: 'VCS Branching', exp: 'Daily Development' },
         { name: 'GitHub', level: 92, icon: <SiGithub />, color: '#e2e8f0', badge: 'Collaboration', exp: 'Open Source Repos' },
+        { name: 'npm', level: 88, icon: <SiNpm />, color: '#cb3837', badge: 'Packages', exp: 'Dependency Management' },
         { name: 'CI/CD Pipelines', level: 78, icon: <FiLayers />, color: '#a855f7', badge: 'Automation', exp: 'Continuous Integration' }
       ]
     }

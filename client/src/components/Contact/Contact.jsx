@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiCheckCircle, FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
+import { FiCheckCircle, FiSend } from 'react-icons/fi';
 import { submitContact } from '../../services/api';
 import styles from './Contact.module.css';
 
@@ -45,37 +45,6 @@ const Contact = () => {
             or just want to talk tech and algorithms, my inbox is always open.
           </p>
 
-          <div className={styles.contactCards}>
-            <a href="mailto:shazam200@gmail.com" className={styles.infoCard}>
-              <div className={styles.cardIcon}>
-                <FiMail />
-              </div>
-              <div>
-                <span className={styles.cardLabel}>Direct Email</span>
-                <span className={styles.cardValue}>shazam200@gmail.com</span>
-              </div>
-            </a>
-
-            <a href="tel:6896456789" className={styles.infoCard}>
-              <div className={styles.cardIcon}>
-                <FiPhone />
-              </div>
-              <div>
-                <span className={styles.cardLabel}>Phone Number</span>
-                <span className={styles.cardValue}>+91 6896456789</span>
-              </div>
-            </a>
-
-            <div className={styles.infoCard}>
-              <div className={styles.cardIcon}>
-                <FiMapPin />
-              </div>
-              <div>
-                <span className={styles.cardLabel}>Location</span>
-                <span className={styles.cardValue}>New Delhi, India</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className={styles.formWrapper}>
@@ -124,7 +93,7 @@ const Contact = () => {
               <label className={styles.label}>Message</label>
               <textarea 
                 name="message" 
-                placeholder="Hi Shahbaz, I'd like to discuss..." 
+                placeholder="Hi, I'd like to discuss..."
                 value={formData.message}
                 onChange={handleChange}
                 required 

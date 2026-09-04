@@ -95,6 +95,18 @@ Open **[http://localhost:5173](http://localhost:5173)** in your browser!
 - HTML5
 - CSS3
 - JavaScript (ES6+)
+- React.js
+- Vite
+- Axios
 - Responsive UI
 - CSS Modules
 - Web Accessibility
+
+## ⚙️ Backend, Database & Tools
+- Node.js and Express.js
+- Java and Spring Boot
+- RESTful API Design
+- MongoDB and MongoDB Atlas
+- Mongoose ODM and schema design
+- dotenv and CORS
+- Git, GitHub, npm, and CI/CD pipelines

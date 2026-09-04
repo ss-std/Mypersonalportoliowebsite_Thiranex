@@ -48,13 +48,23 @@ const skills = [
   { name: 'CSS3', category: 'Frontend', proficiency: 92 },
   { name: 'CSS Modules', category: 'Frontend', proficiency: 86 },
   { name: 'Web Accessibility', category: 'Frontend', proficiency: 82 },
+  { name: 'Vite', category: 'Frontend', proficiency: 88 },
+  { name: 'Axios', category: 'Frontend', proficiency: 84 },
   // Backend & APIs
   { name: 'Node.js', category: 'Backend', proficiency: 82 },
+  { name: 'Express.js', category: 'Backend', proficiency: 84 },
   { name: 'Spring Boot', category: 'Backend', proficiency: 80 },
   { name: 'RESTful API Design', category: 'Backend', proficiency: 88 },
+  { name: 'Mongoose', category: 'Backend', proficiency: 80 },
+  { name: 'dotenv & CORS', category: 'Backend', proficiency: 82 },
+  // Databases
+  { name: 'MongoDB', category: 'Database', proficiency: 80 },
+  { name: 'MongoDB Atlas', category: 'Database', proficiency: 78 },
+  { name: 'Schema Design', category: 'Database', proficiency: 82 },
   // Tools & Practices
   { name: 'Git', category: 'Tools', proficiency: 90 },
   { name: 'GitHub', category: 'Tools', proficiency: 92 },
+  { name: 'npm', category: 'Tools', proficiency: 88 },
   { name: 'CI/CD Pipelines', category: 'Tools', proficiency: 78 }
 ];
 

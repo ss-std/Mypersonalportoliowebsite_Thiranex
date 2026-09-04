@@ -77,7 +77,7 @@ const Navbar = () => {
               </div>
               <div className={styles.brandNameRow}>
                 <span className={styles.bracket}>&lt;</span>
-                <span className={styles.logoName}>Shahbaz</span>
+                <span className={styles.logoName}>Portfolio</span>
                 <span className={styles.logoDomain}>.dev</span>
                 <span className={styles.bracket}>/&gt;</span>
               </div>
@@ -116,10 +116,9 @@ const Navbar = () => {
 
           <div className={styles.navAction}>
             <a 
-              href="mailto:shazam200@gmail.com" 
+              href="#contact"
               className={styles.hireBtn}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={closeMenu}
             >
               <span className={styles.btnShimmer}></span>
               <FiSend className={styles.hireBtnIcon} />
