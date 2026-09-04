@@ -62,7 +62,14 @@ THIRANEX/
 
 ---
 
-## 🛠️ Quick Local Setup (Run in 2 Steps)
+## 🛠️ Quick Local Setup
+
+### Windows one-click startup
+Double-click [`start-localhost.bat`](./start-localhost.bat). It installs dependencies, starts both services, and opens the portfolio at **http://localhost:5173**.
+
+Keep the two terminal windows open while using the application. The frontend runs on port `5173` and the API runs on port `5000`.
+
+### Manual startup
 
 ### Step 1: Start the Backend (Port 5000)
 ```bash
@@ -78,6 +85,8 @@ npm install
 npm run dev
 ```
 Open **[http://localhost:5173](http://localhost:5173)** in your browser!
+
+> The backend requires MongoDB. Set `MONGO_URI` in `server/.env` or run MongoDB locally before starting the backend. The frontend itself is served by Vite on port `5173`.
 
 ---
 
