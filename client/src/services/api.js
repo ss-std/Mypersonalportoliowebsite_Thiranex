@@ -1,6 +1,5 @@
 // ==========================================
 // 🎨 API CLIENT & HTTP SERVICE LAYER
-// Developer: Shahbaz Shafi
 // Description: Centralized Axios instance for 
 // communicating with the backend Express server.
 // ==========================================

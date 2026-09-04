@@ -46,6 +46,8 @@ const skills = [
   { name: 'React.js', category: 'Frontend', proficiency: 90 },
   { name: 'HTML5', category: 'Frontend', proficiency: 95 },
   { name: 'CSS3', category: 'Frontend', proficiency: 92 },
+  { name: 'CSS Modules', category: 'Frontend', proficiency: 86 },
+  { name: 'Web Accessibility', category: 'Frontend', proficiency: 82 },
   // Backend & APIs
   { name: 'Node.js', category: 'Backend', proficiency: 82 },
   { name: 'Spring Boot', category: 'Backend', proficiency: 80 },
@@ -65,10 +67,10 @@ const seedData = async () => {
     await Skill.deleteMany();
     await Message.deleteMany();
 
-    console.log('Inserting Shahbaz Shafi resume projects...');
+    console.log('Inserting portfolio projects...');
     await Project.insertMany(projects);
 
-    console.log('Inserting Shahbaz Shafi resume skills...');
+    console.log('Inserting portfolio skills...');
     await Skill.insertMany(skills);
 
     console.log('Data successfully seeded with resume details!');

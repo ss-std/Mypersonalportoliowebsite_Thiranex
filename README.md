@@ -1,6 +1,6 @@
 # 🚀 Full-Stack Personal Portfolio Website
 
-Welcome to the full-stack personal portfolio web application for **Shahbaz Shafi** (Computer Science & Engineering undergraduate, Full-Stack Developer & Software Engineer).
+Welcome to this full-stack personal portfolio web application for a Computer Science & Engineering undergraduate, Full-Stack Developer & Software Engineer.
 
 ---
 
@@ -91,8 +91,10 @@ Open **[http://localhost:5173](http://localhost:5173)** in your browser!
 
 ---
 
-## 👨‍💻 Developer & Contact Details
-- **Developer**: Shahbaz Shafi
-- **Email**: [shazam200@gmail.com](mailto:shazam200@gmail.com)
-- **Phone**: +91 6896456789
-- **Education**: B.Tech CSE (8.01 GPA), Jamia Hamdard University, New Delhi
+## 🧰 Core Frontend Skills
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Responsive UI
+- CSS Modules
+- Web Accessibility

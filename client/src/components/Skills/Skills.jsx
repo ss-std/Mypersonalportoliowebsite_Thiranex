@@ -57,7 +57,9 @@ const Skills = () => {
         { name: 'React.js', level: 90, icon: <SiReact />, color: '#61dafb', badge: 'SPA & Hooks', exp: 'EMS Portal & Portfolio' },
         { name: 'HTML5', level: 95, icon: <SiHtml5 />, color: '#e34f26', badge: 'Semantic Web', exp: 'CodeAlpha Intern' },
         { name: 'CSS3', level: 92, icon: <FaCss3Alt />, color: '#1572b6', badge: 'Flex & Grid', exp: 'Glassmorphic UI' },
-        { name: 'Responsive UI', level: 90, icon: <FiGrid />, color: '#64ffda', badge: 'Cross-Device', exp: 'Multi-screen UX' }
+        { name: 'Responsive UI', level: 90, icon: <FiGrid />, color: '#64ffda', badge: 'Cross-Device', exp: 'Multi-screen UX' },
+        { name: 'CSS Modules', level: 86, icon: <FiLayers />, color: '#2965f1', badge: 'Scoped Styles', exp: 'Component Architecture' },
+        { name: 'Web Accessibility', level: 82, icon: <FiCode />, color: '#f59e0b', badge: 'Inclusive UX', exp: 'Semantic Interfaces' }
       ]
     },
     {

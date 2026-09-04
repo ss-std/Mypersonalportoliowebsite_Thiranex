@@ -1,6 +1,5 @@
 // ==========================================
 // 🍃 MONGODB DATABASE CONNECTION CONFIG
-// Developer: Shahbaz Shafi
 // Description: Manages the connection lifecycle to 
 // MongoDB using the Mongoose ODM library.
 // ==========================================

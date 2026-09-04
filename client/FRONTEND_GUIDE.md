@@ -9,7 +9,7 @@ Yahan aapka poora **User Interface (UI)** aur website ka design hai.
 | File / Folder | Purpose |
 |---|---|
 | **`src/components/Navbar/`** | Top header with logo, animated **`PORTFOLIO`** badge, and section navigation pills |
-| **`src/components/Hero/`** | Banner section with typewriter effect, your name (*Shahbaz Shafi*), and contact chips |
+| **`src/components/Hero/`** | Banner section with typewriter effect, portfolio identity, and contact chips |
 | **`src/components/About/`** | Bio, B.Tech CSE (8.01 GPA) details, and key strengths |
 | **`src/components/Experience/`** | CodeAlpha internship timeline |
 | **`src/components/Projects/`** | Featured projects (AI Resume Builder, EMS Portal, Image Gallery) |

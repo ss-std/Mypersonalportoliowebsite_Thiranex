@@ -1,6 +1,5 @@
 // ==========================================
 // 📬 CONTACT & INQUIRIES ROUTE
-// Developer: Shahbaz Shafi
 // Description: Receives messages submitted by portfolio
 // visitors and saves them to the MongoDB database.
 // ==========================================

@@ -1,6 +1,5 @@
 // ==========================================
 // 🚀 SERVER ENTRY POINT (Express + Node.js)
-// Developer: Shahbaz Shafi
 // Description: Main backend server handling routes, 
 // database connection, security, and error handling.
 // ==========================================
@@ -46,7 +45,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.json({
     status: 'online',
-    message: '🚀 Shahbaz Shafi Portfolio API is running smoothly',
+    message: '🚀 Portfolio API is running smoothly',
     timestamp: new Date().toISOString()
   });
 });
