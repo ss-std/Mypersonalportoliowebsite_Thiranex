@@ -1,0 +1,224 @@
+.contactSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px var(--space-8);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-12);
+}
+
+.headingNum {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.headingTitle {
+  font-size: clamp(26px, 5vw, 34px);
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.headingLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(100, 255, 218, 0.3) 0%, rgba(255, 255, 255, 0.05) 100%);
+  margin-left: 10px;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.infoTitle {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.infoText {
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 18px 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.infoCard:hover {
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+  transform: translateX(6px);
+  box-shadow: 0 10px 25px -10px var(--accent-glow);
+}
+
+.cardIcon {
+  font-size: 1.4rem;
+  color: var(--accent);
+  background: rgba(100, 255, 218, 0.1);
+  padding: 12px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardLabel {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.cardValue {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.formWrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--border-radius);
+  padding: 36px 32px;
+  box-shadow: var(--box-shadow);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(7, 13, 25, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--gradient-accent);
+  color: #070d19;
+  border-radius: var(--border-radius-sm);
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 10px 25px -5px rgba(100, 255, 218, 0.4);
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -5px rgba(100, 255, 218, 0.6);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sendIcon {
+  font-size: 1.1rem;
+}
+
+.statusAlert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  margin-top: 10px;
+}
+
+.statusAlert.success {
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.statusAlert.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid #ef4444;
+  color: #f87171;
+}
+
+@media (max-width: 868px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+}

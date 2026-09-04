@@ -1,0 +1,236 @@
+.educationSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px var(--space-8);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-12);
+}
+
+.headingNum {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.headingTitle {
+  font-size: clamp(26px, 5vw, 34px);
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.headingLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(100, 255, 218, 0.3) 0%, rgba(255, 255, 255, 0.05) 100%);
+  margin-left: 10px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.degreeCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 36px 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.degreeCard:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px -10px rgba(2, 12, 27, 0.8), 0 0 15px rgba(100, 255, 218, 0.15);
+}
+
+.degreeHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.eduIcon {
+  font-size: 2rem;
+  color: var(--accent);
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  padding: 14px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.degreeBadge {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.degreeTitle {
+  font-size: 1.35rem;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+
+.degreeMajor {
+  color: var(--accent-blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.collegeInfo {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.collegeName {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.collegeMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.metaIcon {
+  color: var(--accent);
+}
+
+.gpaBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(100, 255, 218, 0.08);
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  margin-bottom: 20px;
+}
+
+.gpaIcon {
+  color: #facc15;
+}
+
+.degreeDesc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.certsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.certsHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.certIcon {
+  color: var(--accent);
+}
+
+.certsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.certCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.certCard:hover {
+  border-color: var(--border-card-hover);
+  background: var(--bg-card-hover);
+  transform: translateX(4px);
+}
+
+.certHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.certTitle {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.certDuration {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  background: rgba(100, 255, 218, 0.08);
+  padding: 2px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.certIssuer {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+}
+
+.certFocus {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.checkIcon {
+  color: var(--accent);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 868px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}

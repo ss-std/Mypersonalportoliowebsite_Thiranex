@@ -1,0 +1,217 @@
+.projectsSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px var(--space-8);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-12);
+}
+
+.headingNum {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.headingTitle {
+  font-size: clamp(26px, 5vw, 34px);
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.headingLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(100, 255, 218, 0.3) 0%, rgba(255, 255, 255, 0.05) 100%);
+  margin-left: 10px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.projectCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--border-radius);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px -15px rgba(2, 12, 27, 0.9), 0 0 20px rgba(100, 255, 218, 0.15);
+}
+
+.cardGlow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(45px);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.projectCard:hover .cardGlow {
+  opacity: 0.8;
+  transform: scale(1.3);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.projectIconBadge {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover .projectIconBadge {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.projectLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actionIconBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  transition: var(--transition);
+}
+
+.actionIconBtn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.categoryBadge {
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timelineText {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.projectTitle {
+  font-size: 1.35rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.projectTitle a:hover {
+  color: var(--accent);
+}
+
+.tagline {
+  color: var(--accent-blue);
+  font-size: 0.88rem;
+  font-family: var(--font-mono);
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.projectDescription {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.projectTechList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.techTag {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 3px 9px;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition);
+}
+
+.projectCard:hover .techTag {
+  border-color: rgba(100, 255, 218, 0.2);
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
