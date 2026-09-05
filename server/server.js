@@ -32,7 +32,7 @@ connectDB();
 // 2. GLOBAL MIDDLEWARE
 // ------------------------------------------
 // Allow frontend origin (defaulting to Vite dev port or deployed URL)
-const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+const clientUrl = process.env.CLIENT_URL || 'https://mypersonalportoliowebsite-thiranex-4m7r9on2b-ss-stds-projects.vercel.app';
 app.use(cors({ 
   origin: clientUrl,
   credentials: true 
