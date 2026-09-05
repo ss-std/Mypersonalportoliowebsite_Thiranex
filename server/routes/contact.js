@@ -8,6 +8,7 @@ const express = require('express');
 const { body, validationResult } = require('express-validator');
 const router = express.Router();
 const Message = require('../models/Message');
+const { dbEnabled } = require('../config/db');
 
 // ------------------------------------------
 // POST /api/contact - Submit new message
@@ -36,14 +37,14 @@ router.post(
       const { name, email, subject, message } = req.body;
 
       // 3. Create and save new message document
-      const newMessage = new Message({
-        name,
-        email,
-        subject: subject || 'Portfolio Inquiry',
-        message
-      });
-
-      const savedMessage = await newMessage.save();
+      const savedMessage = dbEnabled
+        ? await new Message({
+            name,
+            email,
+            subject: subject || 'Portfolio Inquiry',
+            message
+          }).save()
+        : { name, email, subject: subject || 'Portfolio Inquiry', message };
 
       console.log(`📩 New message received from: ${name} (${email})`);
 
@@ -64,7 +65,7 @@ router.post(
 // ------------------------------------------
 router.get('/', async (req, res, next) => {
   try {
-    const messages = await Message.find().sort({ createdAt: -1 });
+    const messages = dbEnabled ? await Message.find().sort({ createdAt: -1 }) : [];
     res.json({
       success: true,
       count: messages.length,

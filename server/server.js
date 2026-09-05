@@ -73,10 +73,14 @@ app.use(errorHandler);
 // ------------------------------------------
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`\n==================================================`);
-  console.log(`📡 Portfolio Backend Server Started!`);
-  console.log(`🔗 Local Access: http://localhost:${PORT}`);
-  console.log(`🌍 Client Origin: ${clientUrl}`);
-  console.log(`==================================================\n`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`\n==================================================`);
+    console.log(`📡 Portfolio Backend Server Started!`);
+    console.log(`🔗 Local Access: http://localhost:${PORT}`);
+    console.log(`🌍 Client Origin: ${clientUrl}`);
+    console.log(`==================================================\n`);
+  });
+}
+
+module.exports = app;
