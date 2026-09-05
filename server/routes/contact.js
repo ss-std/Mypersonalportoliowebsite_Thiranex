@@ -60,20 +60,4 @@ router.post(
   }
 );
 
-// ------------------------------------------
-// GET /api/contact - View all received messages
-// ------------------------------------------
-router.get('/', async (req, res, next) => {
-  try {
-    const messages = dbEnabled ? await Message.find().sort({ createdAt: -1 }) : [];
-    res.json({
-      success: true,
-      count: messages.length,
-      data: messages
-    });
-  } catch (err) {
-    next(err);
-  }
-});
-
 module.exports = router;

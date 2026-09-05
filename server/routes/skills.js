@@ -38,12 +38,7 @@ router.get('/', async (req, res, next) => {
 // POST / - create skill
 router.post('/', async (req, res, next) => {
   try {
-    if (!dbEnabled) {
-      return res.status(503).json({ message: 'Skill management requires a database connection' });
-    }
-    const skill = new Skill(req.body);
-    const savedSkill = await skill.save();
-    res.status(201).json(savedSkill);
+    return res.status(405).json({ message: 'Skill management is not publicly available' });
   } catch (err) {
     next(err);
   }
@@ -52,11 +47,7 @@ router.post('/', async (req, res, next) => {
 // PUT /:id - update skill
 router.put('/:id', async (req, res, next) => {
   try {
-    const updatedSkill = await Skill.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
-    if (!updatedSkill) {
-      return res.status(404).json({ message: 'Skill not found' });
-    }
-    res.json(updatedSkill);
+    return res.status(405).json({ message: 'Skill management is not publicly available' });
   } catch (err) {
     next(err);
   }
@@ -65,11 +56,7 @@ router.put('/:id', async (req, res, next) => {
 // DELETE /:id - delete skill
 router.delete('/:id', async (req, res, next) => {
   try {
-    const deletedSkill = await Skill.findByIdAndDelete(req.params.id);
-    if (!deletedSkill) {
-      return res.status(404).json({ message: 'Skill not found' });
-    }
-    res.json({ message: 'Skill deleted' });
+    return res.status(405).json({ message: 'Skill management is not publicly available' });
   } catch (err) {
     next(err);
   }
