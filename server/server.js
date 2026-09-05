@@ -33,8 +33,14 @@ connectDB();
 // ------------------------------------------
 // Allow frontend origin (defaulting to Vite dev port or deployed URL)
 const clientUrl = process.env.CLIENT_URL || 'https://mypersonalportoliowebsite-thiranex-4m7r9on2b-ss-stds-projects.vercel.app';
+const allowedOrigins = [clientUrl, 'http://localhost:5173'];
 app.use(cors({ 
-  origin: clientUrl,
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error('Origin is not allowed by CORS'));
+  },
   credentials: true 
 }));
 
