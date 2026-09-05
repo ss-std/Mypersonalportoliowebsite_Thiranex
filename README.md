@@ -4,6 +4,17 @@ Welcome to this full-stack personal portfolio web application for a Computer Sci
 
 ---
 
+## 🌐 Live Deployment
+
+- **Frontend:** [Open portfolio](https://mypersonalportoliowebsite-thiranex-4m7r9on2b-ss-stds-projects.vercel.app/)
+- **Backend API:** [Open API](https://mypersonalportfolio-api.vercel.app/)
+- **Projects API:** [View projects](https://mypersonalportfolio-api.vercel.app/api/projects)
+- **Skills API:** [View skills](https://mypersonalportfolio-api.vercel.app/api/skills)
+
+Both Vercel deployments are connected to this GitHub repository and redeploy automatically from the `main` branch.
+
+---
+
 ## 📂 Project Structure & Architecture
 
 The project is structured with complete separation of concerns between the **Frontend (Client)**, **Backend (Server)**, and **Database (MongoDB)**:
